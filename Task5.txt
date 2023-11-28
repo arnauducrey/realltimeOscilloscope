@@ -1,0 +1,3 @@
+Q1: 1kHz = 1 ms l'xf peut aller au maximum à 1 ms. Ainsi le composant #1 ne peut pas être exécuté avec le xf car nous ne pouvons pas être sur que le timing sera de 1kHz.
+Q2: le timing le plus rapide vaut 1/60 = 16.7 ms comme le xf peut gérer des ticks toutes les miliseconde nous pouvons exécuter le composant #2 avec le xf.
+Q3: le timer hardware doit etre priorisé car il est plus important d'avoir la conversion A/D qui est précise plutôt qu'un écran très réactif (on s'en fiche si des fois l'écran réagit 10 ms plus tard)

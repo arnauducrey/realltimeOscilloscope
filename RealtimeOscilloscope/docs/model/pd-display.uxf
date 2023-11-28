@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>504</x>
+      <y>144</y>
+      <w>261</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>ui-gen
+bg=#CCCCCC
+layer=-1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>504</x>
+      <y>297</y>
+      <w>261</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>uGFx
+bg=#CCCCCC
+layer=-1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>621</x>
+      <y>261</y>
+      <w>81</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;access&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>504</x>
+      <y>9</y>
+      <w>261</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>app
+bg=#CCCCCC
+layer=-1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>621</x>
+      <y>90</y>
+      <w>81</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;access&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>558</x>
+      <y>45</y>
+      <w>144</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>oscilloscope::Gui
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>522</x>
+      <y>180</y>
+      <w>225</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Oscilloscope Display Page
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>504</x>
+      <y>414</y>
+      <w>261</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>HAL
+bg=#CCCCCC
+layer=-1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>621</x>
+      <y>378</y>
+      <w>81</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;access&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>522</x>
+      <y>450</y>
+      <w>99</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>Display
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>639</x>
+      <y>450</y>
+      <w>99</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>Touch
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

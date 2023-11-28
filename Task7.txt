@@ -1,0 +1,4 @@
+Q1: la fréquence d'échantillage doit être minimume 2 fois la fréquence la plus élevé de notre signal. Dans notre cas la fréquence d'échantillonage doit valoir 2*1kHz = 2kHz
+Q2: Si notre signal ne peut pas avoir une fréquence supérieure à 1kHz et que notre fréquence d'échantillonage vaut au minimum 2 kHz un filtre n'est pas nécessaire. Sinon il faut mettre un filtre qui a une fréquence de coupure a la fréquence d'échantillonage sur 2.
+Q3: La fréquence d'échantillonage du point 1 a été calculé à l'aide du théorème d'échantillonage.
+Q3: 
