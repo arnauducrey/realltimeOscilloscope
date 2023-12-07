@@ -1,4 +1,5 @@
 Q1: la fréquence d'échantillage doit être minimume 2 fois la fréquence la plus élevé de notre signal. Dans notre cas la fréquence d'échantillonage doit valoir 2*1kHz = 2kHz
 Q2: Si notre signal ne peut pas avoir une fréquence supérieure à 1kHz et que notre fréquence d'échantillonage vaut au minimum 2 kHz un filtre n'est pas nécessaire. Sinon il faut mettre un filtre qui a une fréquence de coupure a la fréquence d'échantillonage sur 2.
-Q3: La fréquence d'échantillonage du point 1 a été calculé à l'aide du théorème d'échantillonage.
-Q3: 
+Q3: La fréquence d'échantillonage du point 1 a été calculé à l'aide du théorème d'échantillonage. Mais dans notre cas d'application nous aurons besoins de beaucoup plus de point vu que nous ne faisons pas de conversion D/A derrière.
+Q4: il faut utiliser le chanal ADC3_IN0
+Q5: le seul moyen pour que l'adc effectue plusieurs mesures par ses propres moyen est en mode continus mais dans ce cas il fait une conversion dès qu'il a fini la conversion précédente. Ce qui n'est pas vraiment à intervale régulier.
