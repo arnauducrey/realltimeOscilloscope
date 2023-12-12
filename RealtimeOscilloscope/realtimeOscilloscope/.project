@@ -56,5 +56,30 @@
 			<type>2</type>
 			<location>C:/Users/Arnaud/Desktop/realltimeOscilloscope/RealtimeOscilloscope/src/xf</location>
 		</link>
+		<link>
+			<name>TouchGFX/App</name>
+			<type>2</type>
+			<location>C:/Users/Arnaud/Desktop/realltimeOscilloscope/RealtimeOscilloscope/ide-touchgfx-gen/TouchGFX/App</location>
+		</link>
+		<link>
+			<name>TouchGFX/generated</name>
+			<type>2</type>
+			<location>C:/Users/Arnaud/Desktop/realltimeOscilloscope/RealtimeOscilloscope/ide-touchgfx-gen/TouchGFX/generated</location>
+		</link>
+		<link>
+			<name>TouchGFX/gui</name>
+			<type>2</type>
+			<location>C:/Users/Arnaud/Desktop/realltimeOscilloscope/RealtimeOscilloscope/ide-touchgfx-gen/TouchGFX/gui</location>
+		</link>
+		<link>
+			<name>TouchGFX/target</name>
+			<type>2</type>
+			<location>C:/Users/Arnaud/Desktop/realltimeOscilloscope/RealtimeOscilloscope/ide-touchgfx-gen/TouchGFX/target</location>
+		</link>
+		<link>
+			<name>TouchGFX/Drivers/Components</name>
+			<type>2</type>
+			<location>C:/Users/Arnaud/Desktop/realltimeOscilloscope/RealtimeOscilloscope/ide-touchgfx-gen/Drivers/Components</location>
+		</link>
 	</linkedResources>
 </projectDescription>

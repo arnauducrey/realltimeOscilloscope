@@ -113,7 +113,7 @@ static void MX_USART1_UART_Init(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-  Factory factory = new Factory();
+
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -155,7 +155,9 @@ int main(void)
   MX_TIM8_Init();
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
-
+  XF_initialize(10);
+  Factory_initialize();
+  Factory_build();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -163,7 +165,7 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-
+	XF_exec();
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
