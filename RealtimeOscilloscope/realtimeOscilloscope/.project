@@ -32,6 +32,16 @@
 	</natures>
 	<linkedResources>
 		<link>
+			<name>app</name>
+			<type>2</type>
+			<location>C:/Users/Arnaud/Desktop/realltimeOscilloscope/RealtimeOscilloscope/src/app</location>
+		</link>
+		<link>
+			<name>event</name>
+			<type>2</type>
+			<location>C:/Users/Arnaud/Desktop/realltimeOscilloscope/RealtimeOscilloscope/src/event</location>
+		</link>
+		<link>
 			<name>mdw</name>
 			<type>2</type>
 			<location>C:/Users/Arnaud/Desktop/realltimeOscilloscope/RealtimeOscilloscope/src/mdw</location>
