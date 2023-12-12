@@ -34,4 +34,19 @@ SUBDIRS := \
 Core/Src \
 Core/Startup \
 Drivers/STM32F7xx_HAL_Driver/Src \
+mdw/ext-freqgen \
+mdw/trace/examples \
+platform/f7-disco-gcc/board \
+platform/f7-disco-gcc/ext-26pin \
+platform/f7-disco-gcc/mcu/critical \
+platform/f7-disco-gcc/mcu/hal \
+xf/core \
+xf/port/active-qt \
+xf/port/default \
+xf/port/default-cmsis-os \
+xf/port/default-idf \
+xf/port/default-qt \
+xf/port/idf-qt \
+xf/port/idf-stm32cube \
+xf/port/stm32cube-cmsis-freertos \
 
