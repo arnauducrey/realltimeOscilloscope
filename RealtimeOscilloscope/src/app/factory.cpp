@@ -2,6 +2,7 @@
 #include "xf/xf.h"
 #include "factory.h"
 #include "board/interface/buttonscontrollercallbackprovider.h"
+#include "main.h"
 
 extern "C" TIM_HandleTypeDef htim1;         // Defined in main.c
 extern "C" ADC_HandleTypeDef hadc3;         // Defined in main.c
@@ -35,7 +36,7 @@ void Factory::initialize()
     Trace::out("Initializing...");
 
     // TODO: Uncomment code line below in order to call OscilloscopeController's initialize() method
-//	getOscilloscopeController().initialize(getGui(), adcValuesBuffer, ADC_VALUES_BUFFER_SIZE);
+	getOscilloscopeController().initialize(getGui(), adcValuesBuffer, ADC_VALUES_BUFFER_SIZE);
     getFrequencyGenerator().initialize();
     getFreqGenController().initialize(getGui());
 #if (TOUCHGFX_BAREMETAL != 0)

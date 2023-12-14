@@ -3,7 +3,11 @@
 #include "board/buttonscontroller.h"
 
 extern "C" void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef * hadc){
-	volatile uint32_t value = HAL_ADC_GetValue(hadc);
+	adcValuesBuffer[adcBufferIndex++] = HAL_ADC_GetValue(hadc);
+	if(adcBufferIndex < ADC_VALUES_BUFFER_SIZE){
+		adcBufferIndex = 0;
+	}
+	//volatile uint32_t value = HAL_ADC_GetValue(hadc);
 }
 extern "C" void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
