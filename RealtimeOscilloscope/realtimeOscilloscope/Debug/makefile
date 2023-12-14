@@ -33,7 +33,6 @@ RM := rm -rf
 -include TouchGFX/gui/src/mainview_screen/subdir.mk
 -include TouchGFX/gui/src/common/subdir.mk
 -include TouchGFX/generated/texts/src/subdir.mk
--include TouchGFX/generated/simulator/src/subdir.mk
 -include TouchGFX/generated/images/src/__designer/subdir.mk
 -include TouchGFX/generated/images/src/subdir.mk
 -include TouchGFX/generated/gui_generated/src/mainview_screen/subdir.mk
@@ -108,7 +107,7 @@ main-build: realtimeOscilloscope.elf secondary-outputs
 
 # Tool invocations
 realtimeOscilloscope.elf realtimeOscilloscope.map: $(OBJS) $(USER_OBJS) C:\Users\Arnaud\Desktop\realltimeOscilloscope\RealtimeOscilloscope\realtimeOscilloscope\STM32F746NGHX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-g++ -o "realtimeOscilloscope.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\Users\Arnaud\Desktop\realltimeOscilloscope\RealtimeOscilloscope\realtimeOscilloscope\STM32F746NGHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="realtimeOscilloscope.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+	arm-none-eabi-g++ -o "realtimeOscilloscope.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\Users\Arnaud\Desktop\realltimeOscilloscope\RealtimeOscilloscope\realtimeOscilloscope\STM32F746NGHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="realtimeOscilloscope.map" -Wl,--gc-sections -static -L"C:/Users/Arnaud/Desktop/realltimeOscilloscope/RealtimeOscilloscope/realtimeOscilloscope/../ide-touchgfx-gen/Middlewares/ST/touchgfx/lib/core/cortex_m7/gcc" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
