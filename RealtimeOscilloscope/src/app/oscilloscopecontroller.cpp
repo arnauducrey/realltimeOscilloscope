@@ -111,6 +111,7 @@ void Controller::onCheckBoxTriggerCheckState(bool checked)
 void Controller::doShowAnalogSignal()
 {
 	// TODO: Call gui().drawGraphPoints() with the appropriate data.
+	gui().drawGraphPoints(adcValuesBuffer, ADC_VALUES_BUFFER_SIZE,1);
 }
 
 void Controller::doButtonTimePlusPressed()
