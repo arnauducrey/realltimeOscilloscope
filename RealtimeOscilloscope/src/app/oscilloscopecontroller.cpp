@@ -2,7 +2,7 @@
 #include "trace/trace.h"
 #include "xf/eventstatus.h"
 #include "event/evcheckboxtrigger.h"
-#include "main.h"
+//#include "main.h"
 #include "gui.h"
 #include "oscilloscopecontroller.h"
 
@@ -111,7 +111,7 @@ void Controller::onCheckBoxTriggerCheckState(bool checked)
 void Controller::doShowAnalogSignal()
 {
 	// TODO: Call gui().drawGraphPoints() with the appropriate data.
-	gui().drawGraphPoints(adcValuesBuffer, ADC_VALUES_BUFFER_SIZE,1);
+	gui().drawGraphPoints(_adcValuesBuffer, _adcValuesBufferSize,1);
 }
 
 void Controller::doButtonTimePlusPressed()
