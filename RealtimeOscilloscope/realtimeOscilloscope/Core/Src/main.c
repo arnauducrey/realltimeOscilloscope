@@ -179,13 +179,14 @@ int main(void)
   XF_initialize(10);
   Factory_initialize();
   Factory_build();
+  XF_exec();
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  XF_exec();
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

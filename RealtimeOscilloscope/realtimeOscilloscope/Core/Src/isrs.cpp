@@ -4,7 +4,7 @@
 
 extern "C" void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef * hadc){
 	adcValuesBuffer[adcBufferIndex++] = HAL_ADC_GetValue(hadc);
-	if(adcBufferIndex < ADC_VALUES_BUFFER_SIZE){
+	if(adcBufferIndex > ADC_VALUES_BUFFER_SIZE){
 		adcBufferIndex = 0;
 	}
 	//volatile uint32_t value = HAL_ADC_GetValue(hadc);
