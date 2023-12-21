@@ -111,7 +111,26 @@ void Controller::onCheckBoxTriggerCheckState(bool checked)
 void Controller::doShowAnalogSignal()
 {
 	// TODO: Call gui().drawGraphPoints() with the appropriate data.
-	gui().drawGraphPoints(_adcValuesBuffer, _adcValuesBufferSize,1);
+
+	switch (getTDivValue()) {
+		case TDivValue::TDIV_500us:
+			gui().drawGraphPoints(_adcValuesBuffer, _adcValuesBufferSize,0.625);
+			break;
+		case TDivValue::TDIV_1ms:
+			gui().drawGraphPoints(_adcValuesBuffer, _adcValuesBufferSize,1.25);
+			break;
+		case TDivValue::TDIV_2ms:
+			gui().drawGraphPoints(_adcValuesBuffer, _adcValuesBufferSize,2.5);
+			break;
+		case TDivValue::TDIV_5ms:
+			gui().drawGraphPoints(_adcValuesBuffer, _adcValuesBufferSize,6.25);
+			break;
+		case TDivValue::TDIV_10ms:
+			gui().drawGraphPoints(_adcValuesBuffer, _adcValuesBufferSize,12.5);
+			break;
+		default:
+			break;
+	}
 }
 
 void Controller::doButtonTimePlusPressed()

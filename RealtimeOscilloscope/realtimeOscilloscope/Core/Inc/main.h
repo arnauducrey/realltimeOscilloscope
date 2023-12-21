@@ -382,7 +382,7 @@ void Error_Handler(void);
 #define ARDUINO_MOSI_PWM_D11_Pin GPIO_PIN_15
 #define ARDUINO_MOSI_PWM_D11_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
-#define ADC_VALUES_BUFFER_SIZE 4096
+#define ADC_VALUES_BUFFER_SIZE 8000
 extern uint16_t adcValuesBuffer[ADC_VALUES_BUFFER_SIZE];
 extern uint32_t adcBufferIndex;
 /* USER CODE END Private defines */
