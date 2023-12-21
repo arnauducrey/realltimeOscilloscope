@@ -49,8 +49,6 @@ extern "C" {
 
 /* USER CODE END EM */
 
-void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
-
 /* Exported functions prototypes ---------------------------------------------*/
 void Error_Handler(void);
 
@@ -384,9 +382,9 @@ void Error_Handler(void);
 #define ARDUINO_MOSI_PWM_D11_Pin GPIO_PIN_15
 #define ARDUINO_MOSI_PWM_D11_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
-#define ADC_VALUES_BUFFER_SIZE 8000
+#define ADC_VALUES_BUFFER_SIZE 4096
 extern uint16_t adcValuesBuffer[ADC_VALUES_BUFFER_SIZE];
-extern uint16_t adcBufferIndex;
+extern uint32_t adcBufferIndex;
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus
