@@ -1,0 +1,2 @@
+Q1: La fréquence d'échantillonage vaut maintenant 500kHz
+Q2: les caches augmanetent la réactivité d'environ 54% (230/500 -1)
