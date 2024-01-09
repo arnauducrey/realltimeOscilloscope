@@ -1,0 +1,2 @@
+Q1: La fréquence max d'échantillonage est de 1MHz
+Q2: Si l'on augmente cette fréquence d'échantillonage le processeur est tout le temps entrian de faire la mesure de l'adc et ne peut donc plus afficher le signal.

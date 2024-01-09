@@ -115,19 +115,24 @@ void Controller::doShowAnalogSignal()
 
 	switch (getTDivValue()) {
 		case TDivValue::TDIV_500us:
-			gui().drawGraphPoints(_adcValuesBuffer, _adcValuesBufferSize,(float) SAMPLINGRATE*0.05*8 / (MAXPIX * 460.0));
+			gui().drawGraphPoints(_adcValuesBuffer, _adcValuesBufferSize,(float) SAMPLINGRATE*0.5*8 / (MAXPIX * 1000.0));
+			//gui().drawGraphPoints(_adcValuesBuffer, _adcValuesBufferSize,(float) _adcValuesBufferSize/ (MAXPIX*20.0));
 			break;
 		case TDivValue::TDIV_1ms:
-			gui().drawGraphPoints(_adcValuesBuffer, _adcValuesBufferSize,(float) SAMPLINGRATE*0.1*8 / (MAXPIX * 460.0));
+			gui().drawGraphPoints(_adcValuesBuffer, _adcValuesBufferSize,(float) SAMPLINGRATE*1*8 / (MAXPIX * 1000.0));
+			//gui().drawGraphPoints(_adcValuesBuffer, _adcValuesBufferSize,(float) _adcValuesBufferSize/ (MAXPIX*10.0));
 			break;
 		case TDivValue::TDIV_2ms:
-			gui().drawGraphPoints(_adcValuesBuffer, _adcValuesBufferSize,(float) SAMPLINGRATE*0.2*8 / (MAXPIX * 460.0));
+			gui().drawGraphPoints(_adcValuesBuffer, _adcValuesBufferSize,(float) SAMPLINGRATE*2*8 / (MAXPIX * 1000.0));
+			//gui().drawGraphPoints(_adcValuesBuffer, _adcValuesBufferSize,(float) _adcValuesBufferSize/ (MAXPIX*5.0));
 			break;
 		case TDivValue::TDIV_5ms:
-			gui().drawGraphPoints(_adcValuesBuffer, _adcValuesBufferSize,(float) SAMPLINGRATE*0.5*8 / (MAXPIX * 460.0));
+			gui().drawGraphPoints(_adcValuesBuffer, _adcValuesBufferSize,(float) SAMPLINGRATE*5*8 / (MAXPIX * 1000.0));
+			//gui().drawGraphPoints(_adcValuesBuffer, _adcValuesBufferSize,(float) _adcValuesBufferSize/ (MAXPIX*2.0));
 			break;
 		case TDivValue::TDIV_10ms:
-			gui().drawGraphPoints(_adcValuesBuffer, _adcValuesBufferSize,(float) SAMPLINGRATE*1*8 / (MAXPIX * 460.0));
+			gui().drawGraphPoints(_adcValuesBuffer, _adcValuesBufferSize,(float) SAMPLINGRATE*10*8 / (MAXPIX * 1000.0));
+			//gui().drawGraphPoints(_adcValuesBuffer, _adcValuesBufferSize,(float) _adcValuesBufferSize/ (MAXPIX));
 			break;
 		default:
 			break;
