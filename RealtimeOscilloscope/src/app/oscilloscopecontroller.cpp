@@ -107,26 +107,27 @@ void Controller::onCheckBoxTriggerCheckState(bool checked)
 
     GEN(evCheckBoxTrigger(checked, CHECK_BOX_TRIGGER_ID));
 }
-
+#define SAMPLINGRATE 100000.0
+#define MAXPIX 450.0
 void Controller::doShowAnalogSignal()
 {
 	// TODO: Call gui().drawGraphPoints() with the appropriate data.
 
 	switch (getTDivValue()) {
 		case TDivValue::TDIV_500us:
-			gui().drawGraphPoints(_adcValuesBuffer, _adcValuesBufferSize,0.625);
+			gui().drawGraphPoints(_adcValuesBuffer, _adcValuesBufferSize,(float) SAMPLINGRATE*0.05*8 / (MAXPIX * 460.0));
 			break;
 		case TDivValue::TDIV_1ms:
-			gui().drawGraphPoints(_adcValuesBuffer, _adcValuesBufferSize,1.25);
+			gui().drawGraphPoints(_adcValuesBuffer, _adcValuesBufferSize,(float) SAMPLINGRATE*0.1*8 / (MAXPIX * 460.0));
 			break;
 		case TDivValue::TDIV_2ms:
-			gui().drawGraphPoints(_adcValuesBuffer, _adcValuesBufferSize,2.5);
+			gui().drawGraphPoints(_adcValuesBuffer, _adcValuesBufferSize,(float) SAMPLINGRATE*0.2*8 / (MAXPIX * 460.0));
 			break;
 		case TDivValue::TDIV_5ms:
-			gui().drawGraphPoints(_adcValuesBuffer, _adcValuesBufferSize,6.25);
+			gui().drawGraphPoints(_adcValuesBuffer, _adcValuesBufferSize,(float) SAMPLINGRATE*0.5*8 / (MAXPIX * 460.0));
 			break;
 		case TDivValue::TDIV_10ms:
-			gui().drawGraphPoints(_adcValuesBuffer, _adcValuesBufferSize,12.5);
+			gui().drawGraphPoints(_adcValuesBuffer, _adcValuesBufferSize,(float) SAMPLINGRATE*1*8 / (MAXPIX * 460.0));
 			break;
 		default:
 			break;
