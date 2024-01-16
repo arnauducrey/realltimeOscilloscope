@@ -6,5 +6,3 @@
 // If you need some inspiration on what to provide in the 'xf-config.h' file 
 // please have a look onto the 'xf-config.h' files provided in the 
 // XF test-bench tests.
-
-#endif // XF_CONFIG_DEFAULT_H

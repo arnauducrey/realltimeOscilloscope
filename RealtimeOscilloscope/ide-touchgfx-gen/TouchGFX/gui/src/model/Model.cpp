@@ -50,7 +50,7 @@ void Model::tick()
 			modelListener->notifyDivTimChanged(textDivTim);
 		}
 		if(msg==GRAPH_EVENT){
-			modelListener->notifyDrawGraph(values, maxSize);
+			modelListener->notifyDrawGraph(values, maxSize, xScale);
 		}
 	  }
 #endif // TOUCHGFX_FREERTOS
